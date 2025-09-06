@@ -46,7 +46,7 @@ FROM generate_series(1,1000) AS s(i);
 EOF
 
 # === Jalankan Golang Backend ===
-cd backend-golang
+cd backend-go
 go mod tidy
 (go run main.go &)   # running in background (port 8080)
 cd ..
